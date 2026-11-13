@@ -2,6 +2,8 @@
 
 Misaki 是以 ChatGPT 對話為入口的日文學習專案。這個 repo **主要用於我們持續維護與開發正在使用的 Misaki**；也提供足夠的架構說明與提示詞，讓其他人的 ChatGPT 理解如何在自己的帳戶重建。
 
+**[🌐 Misaki 專案網站（繁體中文）](https://amr4u.github.io/misaki/)** · [English](https://amr4u.github.io/misaki/en/) · [日本語](https://amr4u.github.io/misaki/ja/)
+
 ## 架構先看這裡
 
 **Plugin → Site MCP → D1**
@@ -41,6 +43,8 @@ npm run build
 把 [prompts/setup.md](prompts/setup.md) 的完整內容貼給自己的 ChatGPT。它會先讀本 repo，再依[重建文件](docs/rebuild.md)操作。需要該帳戶能使用 Sites、Plugin 與執行程式的環境；私人 repo 也必須已授權讀取。
 
 `prompts/` 是閱讀與操作入口，不另做安裝器。教學指示與工具連線都要設定，才是完整 Misaki。
+
+**其他語言的自行客製化：**Misaki 主要為**使用繁體中文學習日文**而設計。若想改為另一組固定的學習方向，可以把 [客製化提示詞](prompts/adapt-language.md) 貼給自己的 ChatGPT／Agent，讓它在獨立副本調整並驗證。這不代表主專案已正式支援或驗證其他語言，也不需要修改我們正在維護的版本。
 
 ## 目前功能與驗證範圍
 
