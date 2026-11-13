@@ -1,0 +1,5 @@
+Misaki
+
+Includes the Sites Vite integration in scripts/vite/sites-vite-plugin.ts.
+Its upstream MIT license is preserved in scripts/vite/sites-vite-plugin.LICENSE.
+Other package dependencies retain their respective licenses.
