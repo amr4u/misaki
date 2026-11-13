@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f6f8f7">
+<title>Misaki — Persistent Japanese Learning Memory for ChatGPT</title>
+<meta name="description" content="An open-source, ChatGPT-native Japanese learning memory project built on Plugin → Site MCP → D1, with source-linked notes and practice evidence.">
+<link rel="canonical" href="https://amr4u.github.io/misaki/en/">
+<link rel="alternate" hreflang="zh-TW" href="https://amr4u.github.io/misaki/">
+<link rel="alternate" hreflang="en" href="https://amr4u.github.io/misaki/en/">
+<link rel="alternate" hreflang="ja" href="https://amr4u.github.io/misaki/ja/">
+<link rel="alternate" hreflang="x-default" href="https://amr4u.github.io/misaki/en/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Misaki">
+<meta property="og:title" content="Misaki — Persistent Japanese Learning Memory for ChatGPT">
+<meta property="og:description" content="An open-source, ChatGPT-native Japanese learning memory project built on Plugin → Site MCP → D1, with source-linked notes and practice evidence.">
+<meta property="og:url" content="https://amr4u.github.io/misaki/en/">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="header"><div class="container header-row">
+<a class="brand" href=".././" aria-label="Misaki home"><span class="brandmark" aria-hidden="true">み</span>misaki<span aria-hidden="true" style="color:#448879">.</span></a>
+<nav class="header-nav" aria-label="Primary navigation"><a href="#why">Why Misaki</a><a href="#architecture">Architecture</a><a href="#capabilities">Capabilities</a><a href="#start">Build your own</a></nav>
+<nav class="languages" aria-label="Language"><a href=".././" lang="zh-TW" hreflang="zh-TW">繁體中文</a><a href=".././en/" aria-current="page" lang="en" hreflang="en">English</a><a href=".././ja/" lang="ja" hreflang="ja">日本語</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container hero-layout"><div>
+<p class="eyebrow">OPEN SOURCE · CHATGPT-NATIVE JAPANESE LEARNING</p>
+<h1>Every Japanese question should <em>help the next one go further.</em></h1>
+<p class="subtitle">Misaki is a conversation-first Japanese learning and memory project for ChatGPT. Original Q&amp;A, curated learning notes, and real practice attempts can accumulate in each learner’s own private database.</p>
+<div class="hero-actions"><a class="btn primary" href="https://github.com/amr4u/misaki">Explore the source</a><a class="btn secondary" href="https://github.com/amr4u/misaki/blob/main/prompts/setup.md">Rebuild in your account</a></div>
+<p class="tagline">Not another language model. An open-source way to make ChatGPT’s tutoring work persist across conversations.</p>
+<div class="chips"><span>13 MCP tools</span><span>Source-linked knowledge</span><span>Per-account private data</span></div>
+</div><div class="hero-panel" aria-label="Plugin to Site MCP to D1">
+<div class="panel-top"><span>ARCHITECTURE / MISAKI</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+<div class="node"><strong>ChatGPT + Plugin</strong><small>Tutoring and tool calls</small><b>01</b></div><div class="flow-arrow" aria-hidden="true">↓</div><div class="node"><strong>Site MCP</strong><small>Data API and transactions</small><b>02</b></div><div class="flow-arrow" aria-hidden="true">↓</div><div class="node"><strong>Cloudflare D1</strong><small>Private persistent storage</small><b>03</b></div><div class="panel-foot"><span class="green-dot" aria-hidden="true"></span>Keep teaching in ChatGPT. Keep the records in your own database.</div>
+</div></div></section>
+<section class="section" id="why"><div class="container"><div class="section-header"><p class="eyebrow">01 · WHY MISAKI</p><h2>Learning should not reset with every chat.</h2></div><p class="wide-statement">The phrases you asked about, nuances you explored, and mistakes you actually made are useful learning context. Misaki keeps original conversations, evolving study material, and evidence from real answers separate, so ChatGPT can retrieve and build on them later.</p></div></section>
+<section class="section" id="architecture"><div class="container">
+<div class="section-header"><p class="eyebrow">02 · ARCHITECTURE</p><h2>Simple, inspectable, reproducible.</h2><p>ChatGPT handles tutoring and judgment. Site MCP implements data operations and transactions. D1 stores records persistently. No extra model is hosted on the backend.</p></div>
+<div class="arch-grid"><article class="arch-item"><span class="index">01 / INTELLIGENCE</span><h3>ChatGPT + Plugin</h3><p>Tutoring and tool calls</p></article><article class="arch-item"><span class="index">02 / SERVICE</span><h3>Site MCP</h3><p>Data API and transactions</p></article><article class="arch-item"><span class="index">03 / STORAGE</span><h3>Cloudflare D1</h3><p>Private persistent storage</p></article></div>
+<div class="note"><strong>Keep teaching in ChatGPT. Keep the records in your own database.</strong><p>Each learner should deploy a separate private Site and D1 database—without reusing the maintainer’s credentials, account IDs, or learning data.</p></div>
+</div></section>
+<section class="section" id="capabilities"><div class="container"><div class="section-header">
+<p class="eyebrow">03 · CAPABILITIES</p><h2>Remember not just what, but where it came from.</h2></div>
+<div class="cards"><article class="card"><div class="card-num">01 / MISAKI</div><h3>Original Q&amp;A</h3><p>Preserve the full original input and response. Curating notes does not overwrite the source; connected tools can capture relevant Japanese-learning exchanges.</p></article><article class="card"><div class="card-num">02 / MISAKI</div><h3>Source-linked learning wiki</h3><p>Connect related Q&amp;A into evolving study pages. Retain source references and revisions, and revisit material even after its first review.</p></article><article class="card"><div class="card-num">03 / MISAKI</div><h3>Evidence from actual practice</h3><p>Record real learner answers, hints actually given, and specific feedback—not assumptions about mastery based on repeated questions.</p></article><article class="card"><div class="card-num">04 / MISAKI</div><h3>Requirements and decisions</h3><p>Maintain versioned project context, references, and design decisions so the system can keep evolving without losing the rationale.</p></article></div>
+</div></section>
+<section class="section" id="start"><div class="container"><div class="section-header">
+<p class="eyebrow">04 · GET STARTED</p><h2>Let your ChatGPT read the repository and help reconstruct it.</h2><p>The GitHub repository is both the working maintenance source and a documented reference implementation for others.</p></div>
+<div class="step-grid"><article class="step"><span class="step-n">01</span><h3>Understand the architecture</h3><p>Start with Plugin → Site MCP → D1 and the owner-private access boundary.</p></article><article class="step"><span class="step-n">02</span><h3>Use the setup prompt</h3><p>Paste setup.md into a ChatGPT environment with the necessary tools and permissions.</p></article><article class="step"><span class="step-n">03</span><h3>Create your own services</h3><p>Provision a private Site, D1, and Plugin connection for your account—not a copy of the maintainer’s identity.</p></article><article class="step"><span class="step-n">04</span><h3>Verify real persistence</h3><p>Check tool connectivity, cross-conversation retrieval, source links, and stored records.</p></article></div>
+<div class="action-grid"><article class="action-card"><h3>Start with one prompt</h3><p>You do not need to read every source file first. The setup prompt guides ChatGPT through the required documentation.</p><a href="https://github.com/amr4u/misaki/blob/main/prompts/setup.md">Open setup.md</a></article>
+<article class="action-card alt"><h3>For maintainers and contributors</h3><p>Read AGENTS.md and the architecture and development guides before changing the system.</p><a href="https://github.com/amr4u/misaki/blob/main/docs/development.md">Read the development guide</a></article></div>
+<div class="status"><h3>Project status and limitations</h3><p>The repository includes source code, 13 MCP tools, database migrations, tests, and reconstruction instructions. The original private Sites + D1 service has undergone read/write checks; this reorganized repository and installation in a different account still need independent end-to-end validation. Actual deployment depends on Sites and Plugin features available in each ChatGPT account. Making this GitHub repository public does not make a private Site public.</p></div>
+</div></section>
+</main>
+<footer class="footer"><div class="container footer-row"><div><strong>misaki.</strong><small>A ChatGPT-native reference implementation for Japanese learning · Apache-2.0 license</small></div>
+<nav class="footer-links" aria-label="Project links"><a href="https://github.com/amr4u/misaki">Source code</a><a href="https://github.com/amr4u/misaki/blob/main/docs/architecture.md">Architecture</a><a href="https://github.com/amr4u/misaki/blob/main/docs/rebuild.md">Rebuild guide</a></nav></div></footer>
+</body></html>
