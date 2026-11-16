@@ -1,10 +1,12 @@
 # 在自己的帳戶建立 Misaki
 
-複製下方整段內容貼給自己的 ChatGPT。若 repo 是私人，先確保該 ChatGPT 有讀取權限。
+**先在 ChatGPT 切換至 Work mode，再貼上以下完整提示詞。**安裝過程必須由 Work 使用 Sites 建立與部署私人服務；一般聊天模式不能完成這一步。請先確認自己的帳戶與目前環境可使用 Work、Sites 及 Plugin。若 repo 是私人，還需授權讀取。
 
 ---
 
 請協助我在自己的 ChatGPT 帳戶建立 Misaki。來源 repo：https://github.com/amr4u/misaki
+
+請先確認目前使用 ChatGPT Work mode，並檢查是否有實際可用的 Sites 建立與部署能力。若不是 Work mode、無法核實環境，或缺少 Sites／Plugin 等必要功能，請先告訴我如何切換或補齊條件，不要假裝已完成安裝。一般聊天模式、本機建置或僅提供操作說明，都不能算完成 Sites 部署。
 
 請先讀 README.md、docs/architecture.md、docs/requirements.md、docs/rebuild.md，以及 instructions/misaki.md 與 instructions/nanami.md；不要只看 README 摘要後自行重寫。
 
