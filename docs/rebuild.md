@@ -4,11 +4,19 @@
 
 ## 必要條件
 
-使用者須能讀取本 repo，並在目前環境使用 Sites、MCP Plugin 連線及程式執行能力。Repo 若仍私人，必須已有讀取授權。功能缺少時先明確說明缺少哪一項，使用可用的連線或安裝流程；不要求使用者在聊天貼密碼或 token。
+**安裝必須在 ChatGPT Work mode 進行。**本專案的後端依賴 ChatGPT Sites：建立私人 Site、繫結 D1、提交來源與部署，必須使用能實際操作 Sites 的 Work 環境。一般 ChatGPT 聊天模式只能協助閱讀、討論與準備文件，不能取代 Sites 部署。
+
+開始前先確認：
+
+1. 在 ChatGPT 選擇 **Work mode**，於 Work 對話貼上 [安裝提示詞](../prompts/setup.md)。
+2. Work 環境有可用的 Sites 建立／管理／部署能力，也能執行程式；帳戶可使用 MCP Plugin 連線。
+3. 能讀取完整 repo；私人 repo 必須已有讀取授權。
+
+若 Work mode 不可選、Sites 不可用，或無法確認所需能力，先回報限制及尚需使用者操作的事項；不要以一般聊天中的文字指示、本機測試成功或其他託管平台代替正式 Sites 部署，也不要宣稱已完成安裝。不要求使用者在聊天貼密碼或 token。
 
 ## 建立步驟
 
-1. **取得來源。** 使用可用的 GitHub 連線或 Git 取得完整 repo，記錄來源 commit。保留程式、migration 與測試；新部署目錄不帶入來源 .git、.sites-runtime、.wrangler、node_modules 或帳戶設定。先讀目前環境的 Sites 建立指示。
+1. **取得來源。** 在 Work 中使用可用的 GitHub 連線或 Git 取得完整 repo，記錄來源 commit。保留程式、migration 與測試；新部署目錄不帶入來源 .git、.sites-runtime、.wrangler、node_modules 或帳戶設定。先讀目前環境的 Sites 建立指示。
 2. **建立自己的私人 Site。** 使用 Sites 正式建立流程取得新的 project_id 與來源資訊，保存該 ID，重試時查回同一次建立結果，不反覆新增 Site。
 3. **設定託管。** 以 .openai/hosting.example.json 為基礎建立此帳戶的 .openai/hosting.json，加入剛取得的 project_id，保留 d1=DB、r2=null、capabilities 包含 mcp。由 Sites 建立及繫結 D1，不複用作者的資料庫。既有 Site 更新時保留原本 manifest，不執行新增流程。
 4. **測試及發布。** 依平台設定執行環境與依 package-lock.json 安裝；跑 npm test、npm run typecheck 與 build。保留所有 migration，再透過 Sites 來源提交、封裝、儲存版本與私人部署流程發布。不要把本機測試通過當成正式發布成功。
@@ -16,7 +24,7 @@
 6. **設定教學與整理指示。** 在該環境支援的 Plugin 指示或 Project 指示中使用 instructions/misaki.md 及 instructions/nanami.md。原先使用另一個教學 Plugin 的維護者，可依原本更新流程同步指示來源。若當前環境不能代設 Project 指示，提供可貼上的內容並說明這一步尚待完成；不要宣稱已自動設定。
 7. **完成驗收。** 依下方清單檢查，回報實際成功的部分與仍需使用者操作的部分。
 
-一般使用者以 prompts/setup.md 作為入口即可；執行程式與部署由他們自己的 ChatGPT 使用當時可用的能力處理。
+一般使用者先切換至 Work mode，再貼上 prompts/setup.md；程式執行及 Sites 部署由自己的 Work 環境處理。
 
 ## 驗收清單
 
