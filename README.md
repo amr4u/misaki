@@ -40,9 +40,11 @@ npm run build
 
 ## 在其他帳戶重建
 
-**安裝必須從 ChatGPT Work mode 開始**，因為建立及部署私人 Site 需要 Sites 的執行能力。先切換至 **Work mode**，確認目前帳戶與環境可以使用 Sites，再把 [prompts/setup.md](prompts/setup.md) 的完整內容貼進 Work 對話。Work 會先讀本 repo，再依[重建文件](docs/rebuild.md)操作。
+**初次安裝請使用 ChatGPT Work mode。**先切換至 Work，再把 [prompts/setup.md](prompts/setup.md) 的完整內容貼進 Work 對話。
 
-此外，帳戶還需要可用的 Plugin 連線與程式執行能力；私人 repo 必須已授權讀取。**一般聊天模式可以閱讀與討論 repo，但不能取代 Work 中的 Sites 部署。**若無法使用 Work 或 Sites，應先確認功能可用性，不要將貼上提示詞或本機建置誤認為安裝完成。
+**在開始任何部署之前**，Work 必須先確認目前實際提供的工具能完成：讀取完整 repo、執行程式、建立與部署私人 Site、建立／繫結 D1，以及建立或連接 MCP Plugin。不可只根據帳戶方案推測功能可用；若關鍵工具缺少，停止安裝並說明缺少什麼。詳細檢查與操作見[重建文件](docs/rebuild.md)。
+
+**安裝完成後，日常使用不需要 Work mode。**只要 Misaki Plugin 已連線並可在一般 Chat 使用，即可直接聊天學日文、保存與查詢紀錄；只有部署或修改 Sites 等維護工作才需要回到 Work。最後只需實際確認 Misaki 可用，不要把安裝後驗收當作第一次檢查工具是否存在。
 
 `prompts/` 是閱讀與操作入口，不另做安裝器。教學指示與工具連線都要設定，才是完整 Misaki。
 
