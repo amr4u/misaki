@@ -40,7 +40,9 @@ npm run build
 
 ## 在其他帳戶重建
 
-把 [prompts/setup.md](prompts/setup.md) 的完整內容貼給自己的 ChatGPT。它會先讀本 repo，再依[重建文件](docs/rebuild.md)操作。需要該帳戶能使用 Sites、Plugin 與執行程式的環境；私人 repo 也必須已授權讀取。
+**安裝必須從 ChatGPT Work mode 開始**，因為建立及部署私人 Site 需要 Sites 的執行能力。先切換至 **Work mode**，確認目前帳戶與環境可以使用 Sites，再把 [prompts/setup.md](prompts/setup.md) 的完整內容貼進 Work 對話。Work 會先讀本 repo，再依[重建文件](docs/rebuild.md)操作。
+
+此外，帳戶還需要可用的 Plugin 連線與程式執行能力；私人 repo 必須已授權讀取。**一般聊天模式可以閱讀與討論 repo，但不能取代 Work 中的 Sites 部署。**若無法使用 Work 或 Sites，應先確認功能可用性，不要將貼上提示詞或本機建置誤認為安裝完成。
 
 `prompts/` 是閱讀與操作入口，不另做安裝器。教學指示與工具連線都要設定，才是完整 Misaki。
 
